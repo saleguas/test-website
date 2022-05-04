@@ -1,31 +1,18 @@
 <div id="particles-js"></div>
-<style>
-#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #b61924;
-  background-image: url("");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-}
 
-</style>
+<script src='{{ "/assets/js/tsparticles.slim.bundle.min.js" | relative_url }}' fetchpriority="low"></script>
 
-<script src='{{ "/assets/js/tsparticles.slim.bundle.min.js" | relative_url }}'></script>
-
-<script async>
+<script fetchpriority="low">
 
 tsParticles.load("particles-js", {
   fps_limit: 120,
   interactivity: {
     detect_on: "canvas",
     events: {
-      onclick: { enable: true, mode: "push" },
+      onclick: { enable: true, mode: "repulse" },
       onhover: {
         enable: true,
-        mode: "attract",
+        mode: "grab",
         parallax: { enable: false, force: 60, smooth: 10 }
       },
       resize: true
