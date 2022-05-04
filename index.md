@@ -5,6 +5,6 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 #
 layout: default
-title: Sleek Jekyll Theme
+title: Salvador Aleguas | Portfolio
 type: project
 ---
