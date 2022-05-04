@@ -13,11 +13,12 @@
 
 </style>
 
-<script async src='{{ "/assets/js/tsparticles.slim.bundle.min.js" | relative_url }}'></script>
+<script src='{{ "/assets/js/tsparticles.slim.bundle.min.js" | relative_url }}'></script>
 
 <script async>
+
 tsParticles.load("particles-js", {
-  fps_limit: 60,
+  fps_limit: 120,
   interactivity: {
     detect_on: "canvas",
     events: {
@@ -50,7 +51,7 @@ tsParticles.load("particles-js", {
       enable: true,
       out_mode: "out",
       random: false,
-      speed: 2,
+      speed: 0.5,
       straight: false
     },
     number: { density: { enable: true, value_area: 800 }, value: 80 },
