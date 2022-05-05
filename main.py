@@ -32,8 +32,8 @@ for file in glob.glob(path + '\\*.jpg'):
             new_file_name = filename.replace('.jpg', '_' + size + '.jpg')
             im = Image.open(file)
             im.thumbnail(sizes[size])
-            im.save(new_file_name)
-            print ("file {} created".format(new_file_name))
+            im.save(filepath + '\\' + new_file_name)
+            print ("file {} created".format(filepath + '\\' + new_file_name))
 
 
 
